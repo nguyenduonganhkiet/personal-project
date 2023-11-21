@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Resume</title>
+    <script src="/cdn-cgi/apps/head/ggYtqfwL2v7eoHd-MTphiVk9xJU.js"></script><style></style><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="all" onload="this.media='all'">
+    <noscript>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+        </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.2" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.2.2" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.2" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.2" rel="stylesheet">
+    <noscript>
+          <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+          </style>
+        </noscript>
+    <style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{from{}}@keyframes onautofillcancel{from{}}
+    </style><style>.--savior-overlay-transform-reset {
+      transform: none !important;
+    }
+    .--savior-overlay-z-index-top {
+      z-index: 2147483643 !important;
+    }
+    .--savior-overlay-position-relative {
+      position: relative;
+    }
+    .--savior-overlay-position-static {
+      position: static !important;
+    }
+    .--savior-overlay-overflow-hidden {
+      overflow: hidden !important;
+    }
+    .--savior-overlay-overflow-x-visible {
+      overflow-x: visible !important;
+    }
+    .--savior-overlay-overflow-y-visible {
+      overflow-y: visible !important;
+    }
+    .--savior-overlay-z-index-reset {
+      z-index: auto !important;
+    }
+    .--savior-overlay-display-none {
+      display: none !important;
+    }
+    .--savior-overlay-clearfix {
+      clear: both;
+    }
+    .--savior-overlay-reset-filter {
+      filter: none !important;
+      backdrop-filter: none !important;
+    }
+    .--savior-tooltip-host {
+      z-index: 9999;
+      position: absolute;
+      top: 0;
+    }
+    /*Override css styles for Twitch.tv*/
+    main.--savior-overlay-z-index-reset {
+      z-index: auto !important;
+    }
+    .modal__backdrop.--savior-overlay-z-index-reset {
+      position: static !important;
+    }
+    main.--savior-overlay-z-index-top {
+      z-index: auto !important;
+    }
+    main.--savior-overlay-z-index-top .channel-root__player-container + div,
+    main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
+      opacity: 0.1;
+    }
+    /*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+    .--savior-backdrop {
+      position: fixed !important;
+      z-index: 2147483642 !important;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw !important;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .--savior-overlay-twitter-video-player {
+      position: fixed;
+      width: 80%;
+      height: 80%;
+      top: 10%;
+      left: 10%;
+    }
+    .--savior-overlay-z-index-reset [class*="DivSideNavContainer"],
+    .--savior-overlay-z-index-reset [class*="DivHeaderContainer"],
+    .--savior-overlay-z-index-reset [data-testid="sidebarColumn"],
+    .--savior-overlay-z-index-reset header[role="banner"],
+    .--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:first-child,
+    .--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:nth-child(3) {
+      z-index: -1 !important;
+    }
+    .--savior-overlay-z-index-reset#mtLayer,
+    .--savior-overlay-z-index-reset.media-layer {
+      z-index: 3000 !important;
+    }
+    .--savior-overlay-position-relative [class*="SecBar_secBar_"],
+    .--savior-overlay-position-relative .woo-box-flex [class*="Frame_top_"] {
+      z-index: 0 !important;
+    }
+    .--savior-overlay-position-relative .vue-recycle-scroller__item-view:not(.--savior-overlay-z-index-reset),
+    .--savior-overlay-position-relative .woo-panel-main[class*="BackTop_main_"],
+    .--savior-overlay-position-relative [class*="Main_side_"] {
+      z-index: -1 !important;
+    }
+    /* Fix conflict css with zingmp3 */
+    .zm-video-modal.--savior-overlay-z-index-reset {
+      position: absolute;
+    }
+    /* Dirty hack for xvideos99 */
+    #page #main.--savior-overlay-z-index-reset {
+      z-index: auto !important;
+    }
+    /* Overlay for ok.ru */
+    #vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+      overflow-y: hidden;
+      z-index: 2147483643 !important;
+    }
+    /* Fix missing controller for tv.naver.com */
+    .--savior-overlay-z-index-top.rmc_controller,
+    .--savior-overlay-z-index-top.rmc_setting_intro,
+    .--savior-overlay-z-index-top.rmc_highlight,
+    .--savior-overlay-z-index-top.rmc_control_settings {
+      z-index: 2147483644 !important;
+    }
+    /* Dirty hack for douyi.com */
+    .swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+    .swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+      display: none;
+    }
+    .videoWrap + div > div {
+      pointer-events: unset;
+    }
+    /* Dirty hack for fpt.ai */
+    .mfp-wrap.--savior-overlay-z-index-top {
+      position: relative;
+    }
+    .mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+      display: none;
+    }
+    .mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
+      z-index: -1 !important;
+    }
+    section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
+      position: relative;
+    }
+    div[class^="tiktok"].--savior-overlay-z-index-reset {
+      z-index: 2147483644 !important;
+    }
+    @-moz-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @-o-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    </style></head>
+    <body class="bg-light" id="top" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <header class="d-print-none">
+    <div class="container text-center text-lg-left">
+    <div class="pt-4 clearfix">
+    <h1 class="site-title mb-0">NGUYỄN DƯƠNG ANH KIỆT</h1>
+    <div class="site-nav">
+    <nav role="navigation">
+    <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">về tôi</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">kỹ năng</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">kinh nghiệm</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">trình độ học vấn</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">danh sách đầu tư</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">những thứ liên quan</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Liên Hệ</span></a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </header>
+    <div class="page-content">
+    <div class="container">
+    <div class="resume-container">
+    <div class="shadow-1-strong bg-white my-5" id="intro">
+    <div class="bg-info text-white">
+    <div class="cover bg-image"><img src="images/header-background.jpg" width="1600" height="685">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
+    <div class="text-center p-5">
+    <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="160" height="160"></div>
+    <div class="header-bio mt-3">
+    <div data-aos="zoom-in" data-aos-delay="0" class="aos-init aos-animate">
+    <h2 class="h1">NGUYỄN DƯƠNG ANH KIỆT</h2>
+    <p>Front-end Developer and Graphic Designer</p>
+    </div>
+    <div class="header-social mb-3 d-print-none aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+    <nav role="navigation">
+    <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3 aos-init aos-animate" href="material-resume.pdf" data-aos="fade-right" data-aos-delay="700">Download CV</a><a class="btn btn-info btn-lg shadow-sm mt-1 aos-init aos-animate" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+    <div class="about-section">
+    <div class="row">
+    <div class="col-md-6">
+    <h2 class="h2 fw-light mb-4">About Me</h2>
+    <p>Hello! I’m NGUYỄN DƯƠNG ANH KIỆT. tôi có đam mê với thiết kế và thiết kế Web.<strong>front-end developer</strong> và thông thạo những công cụ thiết kế đồ họa như Photoshop và Sketch. tôi ham học hỏi và hoàn thành tốt công việc nhóm.</p>
+    <p></p>
+    </div>
+    <div class="col-md-5 offset-lg-1">
+    <div class="row mt-2">
+    <h2 class="h2 fw-light mb-4">Lý Lịch</h2>
+    <div class="col-sm-5">
+    <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> tuổi</div>
+    </div>
+    <div class="col-sm-7">
+    <div class="pb-2">18</div>
+    </div>
+    <div class="col-sm-5">
+    <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
+    </div>
+    <div class="col-sm-7">
+    <div class="pb-2">nguyenduonganhkietsptb@gmail.com</div>
+    </div>
+    <div class="col-sm-5">
+    <div class="pb-2 fw-bolder"><i class="fab fa-skype pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Skype</div>
+    </div>
+    <div class="col-sm-7">
+    <div class="pb-2">kietnda@skype.com</div>
+    </div>
+    <div class="col-sm-5">
+    <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> sdt</div>
+    </div>
+    <div class="col-sm-7">
+    <div class="pb-2">+0334-393-892</div>
+    </div>
+    <div class="col-sm-5">
+    <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> địa chỉ</div>
+    </div>
+    <div class="col-sm-7">
+    <div class="pb-2">417/11 Quốc lộ 13,khu phố 4, thị xã Bến Cát, Mỹ Phước, Bình Dương</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
+    <div class="skills-section">
+    <h2 class="h2 fw-light mb-4">kỹ năng chuyên môn</h2>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="mb-3"><span class="fw-bolder">HTML</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-info aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Master</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">CSS</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-info aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">JavaScript</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-info aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Advance</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">WordPress</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-info aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Advance</div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="mb-3"><span class="fw-bolder">Adobe Photoshop</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-secondary aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Master</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">Adobe Illustrator</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-secondary aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Expert</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">Sketch</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-secondary aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+    </div>
+    </div>
+    <div class="mb-3"><span class="fw-bolder">Adobe XD</span>
+    <div class="progress my-2 rounded" style="height: 20px">
+    <div class="progress-bar bg-secondary aos-init" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+    <div class="work-experience-section">
+    <h2 class="h2 fw-light mb-4">kinh nghiệm làm việc</h2>
+    <div class="timeline">
+    <div class="timeline-card timeline-card-info aos-init" data-aos="fade-in" data-aos-delay="0">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Frontend Developer <span class="text-muted h6">at Creative Agency</span></div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">May, 2015 - Present</div>
+    <div>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</div>
+    </div>
+    </div>
+    <div class="timeline-card timeline-card-info aos-init" data-aos="fade-in" data-aos-delay="200">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Graphic Designer <span class="text-muted h6">at Design Studio</span></div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">June, 2013 - May, 2015</div>
+    <div>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</div>
+    </div>
+    </div>
+    <div class="timeline-card timeline-card-info aos-init" data-aos="fade-in" data-aos-delay="400">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Junior Web Developer <span class="text-muted h6">at Indie Studio</span></div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">Jan, 2011 - May, 2013</div>
+    <div>User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+    <div class="education-section">
+    <h2 class="h2 fw-light mb-4">Trình độ học vấn</h2>
+    <div class="timeline">
+    <div class="timeline-card timeline-card-success aos-init" data-aos="fade-in" data-aos-delay="0">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Masters in Information Technology <span class="text-muted h6">from HCM University of education</span> </div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">2011 - 2013</div>
+    <div>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</div>
+    </div>
+    </div>
+    <div class="timeline-card timeline-card-success aos-init" data-aos="fade-in" data-aos-delay="200">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Bachelor of Computer Science <span class="text-muted h6">from Regional College</span> </div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">2007 - 2011</div>
+    <div>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</div>
+    </div>
+    </div>
+    <div class="timeline-card timeline-card-success aos-init" data-aos="fade-in" data-aos-delay="400">
+    <div class="timeline-head px-4 pt-3">
+    <div class="h5">Science and Mathematics <span class="text-muted h6">from Mt. High Scool</span> </div>
+    </div>
+    <div class="timeline-body px-4 pb-4">
+    <div class="text-muted text-small mb-3">1995 - 2007</div>
+    <div>User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
+    <div class="portfolio-section">
+    <h2 class="h2 fw-light mb-4">danh sách đầu tư</h2>
+    <div class="row g-0">
+    <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-1.jpg" width="800" height="500"></a></div>
+    <div class="col-md-6 d-flex align-items-center aos-init" data-aos="fade-left" data-aos-delay="100">
+    <div class="m-4 mt-md-2">
+    <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
+    <h3>Photo Agency Website</h3>
+    <p class="text-muted">Built highly performant website front end for a Photography agency. Delivered codebase in HTML, CSS and modern JavaScript.</p>
+    </div>
+    </div>
+    </div>
+    <div class="row g-0 portfolio-reverse">
+    <div class="col-md-6 d-flex align-items-center aos-init" data-aos="fade-right" data-aos-delay="100">
+    <div class="m-4 mt-md-2 text-end">
+    <p class="text-teal text-small">Graphic Design / Photoshop / Sketch</p>
+    <h3>Restaurant Website Design</h3>
+    <p class="text-muted">Web design for popular resturant chain involving complex layouts done in both Photoshop and Sketch. Collaborated with back-end and front-end team for finished product.</p>
+    </div>
+    </div>
+    <div class="col-md-6"><a href="https://www.behance.net/" target="_blank"><img class="img-fluid" src="images/project-2.jpg" width="800" height="500"></a></div>
+    </div>
+    <div class="row g-0">
+    <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-3.jpg" width="800" height="500"></a></div>
+    <div class="col-md-6 d-flex align-items-center aos-init" data-aos="fade-left" data-aos-delay="100">
+    <div class="m-4 mt-md-2">
+    <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
+    <h3>E-Commerce Website</h3>
+    <p class="text-muted">Built highly performant website for an E-commerce Portal. Worked with back-end team to timely deliver codebase in HTML, CSS and modern JavaScript.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="references">
+    <div class="reference-section">
+    <h2 class="h2 fw-light mb-4">References</h2>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="d-flex mb-2">
+    <div class="avatar"><img src="images/reference-image-1.jpg" width="60" height="60"></div>
+    <div class="header-bio m-3 mb-0">
+    <h3 class="h6 mb-1 aos-init" data-aos="fade-left" data-aos-delay="0">Aiyana</h3>
+    <p class="text-muted text-small aos-init" data-aos="fade-left" data-aos-delay="100">CEO / Web Design Company</p>
+    </div>
+    </div>
+    <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+    <p class="lead mx-2 aos-init" data-aos="fade-left" data-aos-delay="100">kiệt displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="d-flex mb-2">
+    <div class="avatar"><img src="images/reference-image-2.jpg" width="60" height="60"></div>
+    <div class="header-bio m-3 mb-0">
+    <h3 class="h6 mb-1 aos-init" data-aos="fade-left" data-aos-delay="0">Alexander</h3>
+    <p class="text-muted text-small aos-init" data-aos="fade-left" data-aos-delay="100">Front-end Developer / Web Design Company</p>
+    </div>
+    </div>
+    <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+    <p class="lead mx-2 aos-init" data-aos="fade-left" data-aos-delay="100">kiệt is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+    <div class="contant-section">
+    <h2 class="h2 fw-light text mb-4">Liên Hệ</h2>
+    <div class="row mb-4">
+    <div class="col-md-5 aos-init" data-aos="fade-left" data-aos-delay="200">
+    <div class="mt-1">
+    <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> +0334-393-892</div>
+    <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> nguyenduonganhkietsptb@gmail..com</div>
+    </div>
+    <div class="mt-5 d-print-none"><form action="https://formspree.io/your@email.com" method="POST">
+    <div class="form-outline mb-4">
+    <input type="text" id="name" class="form-control" required="">
+    <label class="form-label" for="name" style="margin-left: 0px;">Tên</label>
+    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
+    <div class="form-outline mb-4">
+    <input type="email" id="email" class="form-control" required="">
+    <label class="form-label" for="email" style="margin-left: 0px;">Email</label>
+    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+    <div class="form-outline mb-4">
+    <textarea class="form-control" style="resize: none;" id="message" rows="4" required=""></textarea>
+    <label class="form-label" for="message" style="margin-left: 0px;">lời nhắn </label>
+    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 60px;"></div><div class="form-notch-trailing"></div></div></div>
+    <button class="btn btn-info btn-block mb-4" type="submit">gửi</button>
+    </form>
+    </div>
+    </div>
+    <div class="col-md-7 d-print-none aos-init" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.9774799129763!2d-73.98032087190995!3d40.765927126473905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sin!4v1614183731149!5m2!1sen!2sin" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    </div>
+    </div>
+    </div></div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+    <div class="container">
+    <div class="my-3">
+    <div class="h4">nguyễn Dương anh kiệt </div>
+    <div class="footer-nav">
+    <nav role="navigation">
+    <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="https://github.com/templateflip" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </div>
+    <div class="text-small">
+    <div class="mb-1">© Material Resume. All rights reserved.</div>
+    <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+    </div>
+    </div>
+    </footer>
+    <script src="scripts/mdb.min.js?ver=1.2.2"></script>
+    <script src="scripts/aos.js?ver=1.2.2"></script>
+    <script src="scripts/main.js?ver=1.2.2"></script>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;8289a255abcd04e6&quot;,&quot;r&quot;:1,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;9b7e49e3e22049349b96a4d30f3c83ad&quot;}" crossorigin="anonymous"></script>
+    
+    </body><div style="position: absolute; top: 0px; z-index: 2147483647; display: block !important;"></div></html>
